@@ -2,7 +2,7 @@ import CONFIG from '../../globals/config';
 
 const createRestoItemTemplate = (resto) => `
 <div class="card">
-<img class="lazyload" src="${resto.pictureId ? CONFIG.BASE_IMAGE_URL + resto.pictureId : 'images/heros/hero-image_2.jpg'}" crossorigin="anonymous"  alt="${resto.name}" >
+<img class="lazyload" data-src="${resto.pictureId ? CONFIG.BASE_IMAGE_URL + resto.pictureId : 'images/heros/hero-image_2.jpg'}" crossorigin="anonymous"  alt="${resto.name}" >
 <div class="kota">${resto.city}</div>
 <div class="card_content">
     <p tabindex="0" class="rating"> Rating : <b>${resto.rating}</b   ></p>
@@ -17,7 +17,7 @@ const createRestoItemTemplate = (resto) => `
 const createRestoDetailTemplate = (resto) => `
   <div class="detail">
   <div class="image" id="image">
-  <img tabindex="0" class="image-detail" src="${CONFIG.BASE_IMAGE_URL + resto.pictureId}" crossorigin="anonymous"  alt="${resto.name}" />
+  <img tabindex="0" class="image-detail lazyload" data-src="${CONFIG.BASE_IMAGE_URL + resto.pictureId}" crossorigin="anonymous"  alt="${resto.name}" />
   </div>
   <div class="descripsi">
   <h1 tabindex="0" class="detail-title" id="resto-title"> ${resto.name} </h1>

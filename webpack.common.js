@@ -4,12 +4,15 @@ const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
 const ImageminMozjpeg = require('imagemin-mozjpeg');
+
+// const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
+// const { InjectManifest } = require('workbox-webpack-plugin');
 const path = require('path');
 
 module.exports = {
   entry: {
     app: path.resolve(__dirname, 'src/scripts/index.js'),
-    sw: path.resolve(__dirname, 'src/scripts/sw.js'),
+    // sw: path.resolve(__dirname, 'src/scripts/sw.js'),
   },
   output: {
     filename: '[name].bundle.js',
@@ -94,5 +97,21 @@ module.exports = {
       analyzerMode: 'static',
       openAnalyzer: false,
     }),
+    // new WorkboxWebpackPlugin.GenerateSW({
+    //   swDest: './sw.bundle.js',
+    //   runtimeCaching: [
+    //     {
+    //       urlPattern: ({ url }) => url.origin === 'http://restaurant-api.dicoding.dev',
+    //       handler: 'StaleWhileRevalidate',
+    //       options: {
+    //         cacheName: 'data-from-api',
+    //       },
+    //     },
+    //   ],
+    //   skipWaiting: true,
+    // }),
+    // new InjectManifest({
+    //   swSrc: path.resolve(__dirname, 'src/scripts/sw.js'),
+    // }),
   ],
 };
