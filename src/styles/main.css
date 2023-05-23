@@ -167,7 +167,7 @@ nav ul.active {
 .not-favorite{
     margin-top: 30px;
     margin-left: 30px;
-    margin-bottom: 200px;
+    margin-bottom: 250px;
     width: 200px;
 }
 
@@ -182,7 +182,7 @@ nav ul.active {
     .not-favorite{
         margin-top: 30px;
         margin-left: 40px;
-        margin-bottom: 200px;
+        margin-bottom: 250px;
         width: 300px;
     }
 }
@@ -239,7 +239,7 @@ nav ul.active {
   .not-favorite{
     margin-top: 30px;
     margin-left: 20px;
-    margin-bottom: 200px;
+    margin-bottom: 250px;
     width: 450px;
 }
   
