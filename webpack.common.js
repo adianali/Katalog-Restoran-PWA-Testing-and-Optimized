@@ -5,8 +5,6 @@ const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
 const ImageminMozjpeg = require('imagemin-mozjpeg');
 
-// const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
-// const { InjectManifest } = require('workbox-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -97,21 +95,5 @@ module.exports = {
       analyzerMode: 'static',
       openAnalyzer: false,
     }),
-    // new WorkboxWebpackPlugin.GenerateSW({
-    //   swDest: './sw.bundle.js',
-    //   runtimeCaching: [
-    //     {
-    //       urlPattern: ({ url }) => url.origin === 'http://restaurant-api.dicoding.dev',
-    //       handler: 'StaleWhileRevalidate',
-    //       options: {
-    //         cacheName: 'data-from-api',
-    //       },
-    //     },
-    //   ],
-    //   skipWaiting: true,
-    // }),
-    // new InjectManifest({
-    //   swSrc: path.resolve(__dirname, 'src/scripts/sw.js'),
-    // }),
   ],
 };

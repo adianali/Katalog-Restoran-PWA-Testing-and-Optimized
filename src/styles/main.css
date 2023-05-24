@@ -99,10 +99,10 @@ nav ul.active {
 
 @media screen and (min-width: 300px) {
    
-    .jumbotron {
+    /* .jumbotron {
       background-image:url(../public/images/heros/hero-image_4-small.jpg)no-repeat center;
       background-size: cover;
-  }
+  } */
     .card-list {
         display: grid;
         grid-template-columns: 1fr;
@@ -176,8 +176,7 @@ nav ul.active {
 
 @media screen and (min-width: 450px){
     .jumbotron {
-        background-image:url(../public/images/heros/hero-image_4-small.jpg)no-repeat center;
-        background-size: cover;
+        background-image:url(../public/images/heros/hero-image_4-small.jpg)
     }
     .not-favorite{
         margin-top: 30px;
@@ -187,10 +186,10 @@ nav ul.active {
     }
 }
 @media screen and (min-width: 550px){
-    .jumbotron {
+    /* .jumbotron {
         background-image:url(../public/images/heros/hero-image_4-small.jpg)no-repeat center;
         background-size: cover;
-    }
+    } */
     
     .detail .image .image-detail{
         width: 400px;
@@ -244,11 +243,12 @@ nav ul.active {
 }
   
 }
+
 @media screen and (min-width: 700px) {
-    .jumbotron {
+    /* .jumbotron {
         background-image:url(../public/images/heros/hero-image_4-large.jpg)no-repeat center;
         background-size: cover;
-    }
+    } */
     .card-list {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -295,9 +295,8 @@ nav ul.active {
 }
 
 @media screen and (min-width: 1000px) {
-    .jumbotron {
-        background-image:url(../public/images/heros/hero-image_4.jpg)no-repeat center;
-        background-size: cover;
+     .jumbotron {
+        background-image:url(../public/images/heros/hero-image_4-large.jpg)
     }
     .card-list {
         display: grid;
